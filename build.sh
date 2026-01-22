@@ -1,10 +1,14 @@
-#! /bin/sh
+#! /bin/bash
 
 # Copyright (c) 2026 UNSTABLE-PLUTONIUM
-# Licensed under the MIT License.
-# See LICENSE file in the project root for full license information
+# Licensed under the MIT License
+# See LICENSE file in the project root for full information
 
-gcc -std=c99 -c -I third_party/inih third_party/inih/ini.c src/main.c src/handler.c src/handle_generator.c
-gcc ini.o main.o handler.o handle_generator.o -o tint
+cc -std=c99 -I third_party/inih -c third_party/inih/ini.c
+cc -std=c99 -I third_party/inih -c src/tint.c
+cc -std=c99 -I third_party/inih -c src/handler.c
+cc -std=c99 -I third_party/inih -c src/handle_generator.c
 
-rm ini.o main.o handler.o handle_generator.o
+cc ini.o tint.o handler.o handle_generator.o -o tint
+
+rm ini.o tint.o handler.o handle_generator.o

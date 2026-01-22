@@ -8,7 +8,7 @@
 
 int main(int argc, char **argv) {
 	if (argc < 3) {
-		puts("usage:\n\tpigment <generator> <color scheme>.ini");
+		puts("usage:\n\tpigment <generator> <color scheme>");
 		return 1;
 	}
 
