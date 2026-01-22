@@ -1,4 +1,4 @@
-# Picasso
+# Tint
 terminal color schemes made easy and modular
 
 # How To Use it
