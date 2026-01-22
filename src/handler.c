@@ -16,8 +16,7 @@ int handler(void* user, const char* selection, const char* name, const char* val
 
 	MATCH("foreground"); SETVAL(userptr->foreground);
 	MATCH("background"); SETVAL(userptr->background);
-	MATCH("cursor_foreground"); SETVAL(userptr->cursor_foreground);
-	MATCH("cursor_background"); SETVAL(userptr->cursor_background);
+	MATCH("cursor"); SETVAL(userptr->cursor);
 	MATCH("selection_foreground"); SETVAL(userptr->selection_foreground);
 	MATCH("selection_background"); SETVAL(userptr->selection_background);
 	MATCH("color0"); SETVAL(userptr->color0);

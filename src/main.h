@@ -19,8 +19,7 @@
 typedef struct {
 	char foreground[8];
 	char background[8];
-	char cursor_foreground[8];
-	char cursor_background[8];
+	char cursor[8];
 	char selection_foreground[8];
 	char selection_background[8];
 	char color0[8];
