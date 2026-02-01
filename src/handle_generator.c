@@ -36,14 +36,14 @@ void handle_generator(char *generator, colorscheme* scheme) {
 	pid_t pid = fork();
 
 	if (pid < 0) {
-		puts("failed to fork current program");
+		perror("Failed To Fork PID");
 		exit(1);
 	}
 
-	else if (pid == 0) {
+	if (pid == 0) {
 		execv(args[0], args);
 
-		puts("failed to run generator");
+		perror("Failed To Run Generator");
 		exit(1);
 	}
 
