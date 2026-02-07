@@ -40,7 +40,7 @@ typedef struct {
 	char color15[8];
 } colorscheme; // is it supposed to be colorscheme or color scheme?
 
-#define MATCH(s) if (strcmp(selection, s) == 0)
+#define MATCH(s) (strcmp(selection, s) == 0)
 #define SETVAL(v) strncpy(v, value, sizeof(v))
 
 extern void handle_generator(char *generator, colorscheme* scheme);

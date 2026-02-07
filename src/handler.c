@@ -14,27 +14,26 @@ int handler(void* user, const char* selection, const char* name, const char* val
 		strncpy(userptr->foreground, value, sizeof(userptr->foreground));
 	}
 
-	MATCH("foreground"); SETVAL(userptr->foreground);
-	MATCH("background"); SETVAL(userptr->background);
-	MATCH("cursor"); SETVAL(userptr->cursor);
-	MATCH("selection_foreground"); SETVAL(userptr->selection_foreground);
-	MATCH("selection_background"); SETVAL(userptr->selection_background);
-	MATCH("color0"); SETVAL(userptr->color0);
-	MATCH("color1"); SETVAL(userptr->color1);
-	MATCH("color2"); SETVAL(userptr->color2);
-	MATCH("color3"); SETVAL(userptr->color3);
-	MATCH("color4"); SETVAL(userptr->color4);
-	MATCH("color5"); SETVAL(userptr->color5);
-	MATCH("color6"); SETVAL(userptr->color6);
-	MATCH("color7"); SETVAL(userptr->color7);
-	MATCH("color8"); SETVAL(userptr->color8);
-	MATCH("color9"); SETVAL(userptr->color9);
-	MATCH("color10"); SETVAL(userptr->color10);
-	MATCH("color11"); SETVAL(userptr->color11);
-	MATCH("color12"); SETVAL(userptr->color12);
-	MATCH("color13"); SETVAL(userptr->color13);
-	MATCH("color14"); SETVAL(userptr->color14);
-	MATCH("color15"); SETVAL(userptr->color15);
+	else if MATCH("background") SETVAL(userptr->background);
+	else if MATCH("cursor") SETVAL(userptr->cursor);
+	else if MATCH("selection_foreground") SETVAL(userptr->selection_foreground);
+	else if MATCH("selection_background") SETVAL(userptr->selection_background);
+	else if MATCH("color0") SETVAL(userptr->color0);
+	else if MATCH("color1") SETVAL(userptr->color1);
+	else if MATCH("color2") SETVAL(userptr->color2);
+	else if MATCH("color3") SETVAL(userptr->color3);
+	else if MATCH("color4") SETVAL(userptr->color4);
+	else if MATCH("color5") SETVAL(userptr->color5);
+	else if MATCH("color6") SETVAL(userptr->color6);
+	else if MATCH("color7") SETVAL(userptr->color7);
+	else if MATCH("color8") SETVAL(userptr->color8);
+	else if MATCH("color9") SETVAL(userptr->color9);
+	else if MATCH("color10") SETVAL(userptr->color10);
+	else if MATCH("color11") SETVAL(userptr->color11);
+	else if MATCH("color12") SETVAL(userptr->color12);
+	else if MATCH("color13") SETVAL(userptr->color13);
+	else if MATCH("color14") SETVAL(userptr->color14);
+	else if MATCH("color15") SETVAL(userptr->color15);
 
 	return 1;
 }
